@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>¡Feliz Cumpleaños! 🎉</h1>
+            <p>Para el amor de mi vida❤️</p>
+        </div>
+
+        <div class="card">
+            <div class="letter">
+                <p>Querida Daniela,</p>
+                <br>
+                <p>Aunque la distancia nos separe físicamente, quiero que sepas que hoy estoy contigo en pensamiento y corazón. Este día tan especial merece una celebración especial, y aunque no pueda estar ahí para abrazarte, he preparado esto con todo mi cariño.</p>
+                <br>
+                <p>Cada día a tu lado (aunque sea virtual) es un regalo, y hoy quiero celebrar que existes, que eres parte de mi vida y que me haces inmensamente feliz.</p>
+                <br>
+                <p>Con todo mi amor,<br>Daniel Perez</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 style="color: #667eea; text-align: center; margin-bottom: 20px;">⏰ Tiempo que llevamos hablando</h2>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">0</span>
+                    <span class="countdown-label">Días</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">0</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">0</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">0</span>
+                    <span class="countdown-label">Segundos
+
+
+                        
+                    </span>
+                </div>
+            </div>
+            <p style="text-align: center; color: #666; margin-top: 20px;">Y contando... ❤️</p>
+        </div>
+
+        <div class="card">
+            <h2 style="color: #667eea; text-align: center; margin-bottom: 20px;">💝 Razones por las que eres especial</h2>
+            <button class="btn" onclick="showReasons()">Descubrir</button>
+            <div id="reasonsSection" class="hidden">
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <h3>Tu sonrisa ✨</h3>
+                        <p>Ilumina mis días</p>
+                    </div>
+                    <div class="reason-card">
+                        <h3>Tu voz 🎵</h3>
+                        <p>La más hermosa que he escuchado</p>
+                    </div>
+                    <div class="reason-card">
+                        <h3>Tu risa 😊</h3>
+                        <p>Es contagiosa y hermosa</p>
+                    </div>
+                    <div class="reason-card">
+                        <h3>Tu forma de ser 💫</h3>
+                        <p>Única e increíble</p>
+                    </div>
+                    <div class="reason-card">
+                        <h3>Tu compañía 🌟</h3>
+                        <p>Me hace sentir completo</p>
+                    </div>
+                    <div class="reason-card">
+                        <h3>Tú completa 💖</h3>
+                        <p>Simplemente perfecta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 style="color: #667eea; text-align: center; margin-bottom: 20px;">📝 Nuestros momentos especiales</h2>
+            <div class="memory-box">
+                <p><strong>🌟 Primera vez que hablamos:</strong> La primera vez que hablamos fue de la mejor experincia para mi, y saber que todo esto sucederia lo haria una y mil veces, nunca me arrepentire de amarte y conocerte.</p>
+            </div>
+            <div class="memory-box">
+                <p><strong>💭 Momento que nunca olvidaré:</strong> Cada momento junto a ti es inolvidable, nunca olvidare todas las veces que nos hemos visto porque contigo todo es increible.</p>
+            </div>
+            <div class="memory-box">
+                <p><strong>😊 Lo que más me gusta de nuestras conversaciones:</strong> Las risas, como nos entendemos y como nos conocemos.</p>
+            </div>
+            <div class="memory-box">
+                <p><strong>💫 Mi promesa para ti:</strong> Amarte durante el resto de tus cumpleaños y amarte siempre y mostrarte mi amor</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 style="color: #667eea; text-align: center; margin-bottom: 20px;">📸 Nuestra Galería de Recuerdos</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 20px;">Nuestros momentos más especiales capturados ❤️</p>
+            
+            <div class="photo-gallery" id="photoGallery">
+                <div class="photo-card" onclick="openModal(0)">
+                    <div class="photo-placeholder">
+                        📷<br>Una foto donde estas tú toda hermosa<br>
+                    </div>
+                    <div class="photo-caption">Tu mostrando tu belleza</div>
+                </div>
+                <div class="photo-card" onclick="openModal(1)">
+                    <div class="photo-placeholder">
+                        📷<br>Donde empezo todo<br>
+                    </div>
+                    <div class="photo-caption">Nuestra primera foto</div>
+                </div>
+                <div class="photo-card" onclick="openModal(2)">
+                    <div class="photo-placeholder">
+                        📷<br>Un dia que nunca se me va a olvidar<br>
+                    </div>
+                    <div class="photo-caption">Todo contigo</div>
+                </div>
+                <div class="photo-card" onclick="openModal(3)">
+                    <div class="photo-placeholder">
+                        📷<br>Tus hermosa carita tiernaa<br>
+                    </div>
+                    <div class="photo-caption">Me encantan esos pucheros!!</div>
+                </div>
+                <div class="photo-card" onclick="openModal(4)">
+                    <div class="photo-placeholder">
+                        📷<br>Y algo que mencionar<br>
+                    </div>
+                    <div class="photo-caption">Tus hermosos besos🥰</div>
+                </div>
+                <div class="photo-card" onclick="openModal(5)">
+                    <div class="photo-placeholder">
+                        📷<br>Gracias por estar en mi vida<br>
+                    </div>
+                    <div class="photo-caption">Te amo</div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="card">
+            <h2 style="color: #667eea; text-align: center; margin-bottom: 20px;">💌 Deja tu deseo de cumpleaños</h2>
+            <p style="text-align: center; color: #666;">Escribe lo que deseas para este nuevo año de vida</p>
+            <textarea class="message-input" id="wishInput" placeholder="Mi deseo es..." rows="4"></textarea>
+            <button class="btn" onclick="saveWish()" style="display: block; margin: 10px auto;">Guardar mi deseo ✨</button>
+            <div id="wishSaved" class="hidden" style="text-align: center; color: #667eea; margin-top: 20px;">
+                <p>✓ ¡Tu deseo ha sido guardado! Que se haga realidad 🌟</p>
+            </div>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <h2 style="color: #667eea; margin-bottom: 20px;">🎂 Sopla tu vela virtual</h2>
+            <button class="wish-button" onclick="blowCandle()">
+                🕯️<br>Clic aquí<br>para soplar
+            </button>
+            <div id="candleMessage" class="hidden" style="margin-top: 20px; font-size: 1.2em; color: #667eea;">
+                <p>🎉 ¡Deseo cumplido! 🎉</p>
+                <p>Mi amor, te amare hasta el fin de mis dias y lo que Dios me permita estar a tú lado ❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="photoModal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" src="" alt="Foto ampliada">
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
